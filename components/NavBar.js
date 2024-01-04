@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import Script from "next/script";
 
-// bg-[#4a389c]
 const NavBar = (col) => {
   return (
     <>
@@ -31,7 +30,7 @@ const NavBar = (col) => {
               </li>
 
               <li className="group pl-6 animate-beat">
-                <Link href={"/projects"}>
+                <Link href={"./projects"}>
                   <a>
                     <span className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">
                       Projects
@@ -42,7 +41,7 @@ const NavBar = (col) => {
               </li>
 
               <li className="group pl-6 animate-wiggle">
-                <Link href={"/blogs"}>
+                <Link href={"./blogs"}>
                   <a target={"_blank"}>
                     <span className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white ">
                       Blog
@@ -79,7 +78,7 @@ const NavBar = (col) => {
         <div className="absolute right-0 min-h-screen w-2/3 bg-primary py-4 px-8 shadow md:w-1/3">
           <button id="toggelClose" className="absolute top-0 right-0 mt-4 mr-4">
             <img
-              src="/assets//img/icon-close.svg"
+              src="./assets//img/icon-close.svg"
               className="h-10 w-auto"
               alt=""
             />
@@ -93,7 +92,7 @@ const NavBar = (col) => {
             </li>
 
             <li className="py-2">
-            <Link href={"/projects"}>
+            <Link href={"./projects"}>
               <span className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">
                 Projects
               </span>
@@ -101,7 +100,7 @@ const NavBar = (col) => {
             </li>
 
             <li className="py-2">
-              <Link href={"/blogs"}>
+              <Link href={"./blogs"}>
                 <a target={"_blank"}>
                   <span className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">
                     Blog

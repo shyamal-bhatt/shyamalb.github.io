@@ -1,13 +1,3 @@
-// Color pallete
-// #1A1A1D : rgb(26, 26, 29)
-// #4E4E50 : rgb(78, 78, 80)
-// #6F2232 : rgb(111, 34, 50)
-// #950740 : rgb(149, 7, 80)
-// #C3073F : rgb(195, 7, 63)
-// #070e18
-// rgba(7,14,24,1)
-// 159 202 215
-
 // Next js compenents
 import React, { useRef } from "react";
 import Head from "next/head";
@@ -58,7 +48,7 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
   };
   return (
     <>
-      <Script src="/assets//js/main.js"></Script>
+      <Script src="./assets//js/main.js"></Script>
       <Head>
         <meta charSet="utf-8" />
 
@@ -84,7 +74,7 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         />
 
-        <link rel="icon" type="image/png" href="/assets//img/SB.jfif" />
+        <link rel="icon" type="image/png" href="./assets//img/SB.jfif" />
 
         <meta name="theme-color" content="#5540af" />
 
@@ -122,7 +112,7 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
         {/* Style sheets import here */}
         <link
           crossOrigin="anonymous"
-          href="/assets//styles/main.min.css"
+          href="./assets//styles/main.min.css"
           media="screen"
           rel="stylesheet"
         />
@@ -137,7 +127,7 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
           src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
         ></Script>
 
-        <Script src="/assets//js//main.js"></Script>
+        <Script src="./assets//js//main.js"></Script>
       </Head>
 
       {/* ==================================================== */}
@@ -149,7 +139,7 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
           {/* blur Background image */}
           <div
             className="relative bg-cover bg-center bg-no-repeat py-8"
-            style={{ backgroundImage: "url(/assets/img/bg-hero.jpg)" }}
+            style={{ backgroundImage: "url(./assets/img/bg-hero.jpg)" }}
           >
             <div className="absolute inset-0 z-20 bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to bg-cover bg-center bg-no-repeat"></div>
 
@@ -357,7 +347,7 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
                   return (
                     <Link
                       key={item.slug.current}
-                      href={"/blog/" + item.slug.current}
+                      href={"./blog/" + item.slug.current}
                       className="shadow"
                     >
                       <div>
@@ -367,7 +357,7 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
                           style={{
                             backgroundImage: `url(${
                               builder.image(item.image).width(200).url() ||
-                              "/assets/img/post-01.png"
+                              "./assets/img/post-01.png"
                             })`,
                           }}
                           className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"

@@ -27,7 +27,7 @@ const Blogs = ({ blog, sanityKey }) => {
         />
         <link
           crossOrigin="anonymous"
-          href="/assets//styles/main.min.css"
+          href="./assets//styles/main.min.css"
           media="screen"
           rel="stylesheet"
         />
@@ -38,8 +38,8 @@ const Blogs = ({ blog, sanityKey }) => {
         />
 
         <title>Blogs</title>
-        <link rel="icon" type="image/png" href="/assets/img/SB.jfif" />
-        <Script src="/assets//js//main.js"></Script>
+        <link rel="icon" type="image/png" href="./assets/img/SB.jfif" />
+        <Script src="./assets//js//main.js"></Script>
       </Head>
 
         <NavBar backgroundColor = "#070e18"/>
@@ -54,7 +54,7 @@ const Blogs = ({ blog, sanityKey }) => {
                 return (
                   <Link
                     key={item.slug.current}
-                    href={"/blog/" + item.slug.current}
+                    href={"./blog/" + item.slug.current}
                     className="shadow"
                   >
                     <div className="transform transition-all hover:scale-105 md:mx-0">
@@ -62,7 +62,7 @@ const Blogs = ({ blog, sanityKey }) => {
                         style={{
                           backgroundImage: `url(${
                             builder.image(item.image).width(200).url() ||
-                            "/assets/img/post-01.png"
+                            "./assets/img/post-01.png"
                           })`,
                         }}
                         className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"

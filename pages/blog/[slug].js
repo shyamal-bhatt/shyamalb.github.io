@@ -122,7 +122,7 @@ const Post = ({ blog, profile, social, sanityKey }) => {
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         />
 
-        <link rel="icon" type="image/png" href="/assets/img/SB.jfif" />
+        <link rel="icon" type="image/png" href="./assets/img/SB.jfif" />
 
         <meta name="theme-color" content="#5540af" />
 
@@ -158,7 +158,7 @@ const Post = ({ blog, profile, social, sanityKey }) => {
 
         <link
           crossorigin="anonymous"
-          href="/assets/styles/main.min.css"
+          href="./assets/styles/main.min.css"
           media="screen"
           rel="stylesheet"
         />
@@ -179,7 +179,7 @@ const Post = ({ blog, profile, social, sanityKey }) => {
         />
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
-        <Script src="/assets//js//main.js"></Script>
+        <Script src="./assets//js//main.js"></Script>
       </Head>
 
       <div id="main" className="relative">

@@ -17,7 +17,7 @@ const Projects = ({ project, sanityKey }) => {
         />
         <link
           crossOrigin="anonymous"
-          href="/assets//styles/main.min.css"
+          href="./assets//styles/main.min.css"
           media="screen"
           rel="stylesheet"
         />
@@ -28,8 +28,8 @@ const Projects = ({ project, sanityKey }) => {
         />
 
         <title>Projects</title>
-        <link rel="icon" type="image/png" href="/assets/img/SB.jfif" />
-        <Script src="/assets//js//main.js"></Script>
+        <link rel="icon" type="image/png" href="./assets/img/SB.jfif" />
+        <Script src="./assets//js//main.js"></Script>
       </Head>
         <NavBar backgroundColor="#070e18" />
       <div className="my-12 ">
