@@ -172,6 +172,7 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
                     <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
                       <a
                         href={social.github}
+                        rel="noopener noreferrer"
                         className="cursor-pointer"
                         target="_blank"
                       >
@@ -179,6 +180,7 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
                       </a>
                       <a
                         href={social.medium}
+                        rel="noopener noreferrer"
                         className="cursor-pointer pl-4"
                         target="_blank"
                       >
@@ -186,6 +188,7 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
                       </a>
                       <a
                         href={social.linkedin}
+                        rel="noopener noreferrer"
                         className="cursor-pointer pl-4"
                         target="_blank"
                       >
@@ -193,6 +196,7 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
                       </a>
                       <a
                         href={"mailto:" + social.gmail}
+                        rel="noopener noreferrer"
                         className="cursor-pointer pl-4"
                         target="_blank"
                       >

@@ -94,7 +94,7 @@ const Post = ({ blog, profile, social, sanityKey }) => {
 
   return (
     <>
-      <Script src="./assets//js//main.js"></Script>
+      <Script defer src="./assets/js/main.js"></Script>
       <Head>
         <meta charSet="utf-8" />
 
@@ -180,6 +180,7 @@ const Post = ({ blog, profile, social, sanityKey }) => {
         />
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+        
       </Head>
 
       <div id="main" className="relative">
@@ -221,9 +222,10 @@ const Post = ({ blog, profile, social, sanityKey }) => {
 
                 {/* *************** Blog Tags *************** */}
                 <div className="flex pt-10">
-                  {blog.tags.map((item) => {
+                  {blog.tags.map((item, index) => {
                     return (
                       <div
+                        key={index} 
                         href="/"
                         className="cursor-default rounded-xl bg-primary px-4 py-1 font-body font-bold text-white hover:bg-grey-20 mx-0.5"
                       >
