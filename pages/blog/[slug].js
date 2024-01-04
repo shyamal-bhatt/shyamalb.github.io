@@ -94,6 +94,7 @@ const Post = ({ blog, profile, social, sanityKey }) => {
 
   return (
     <>
+      <Script src="./assets//js//main.js"></Script>
       <Head>
         <meta charSet="utf-8" />
 
@@ -179,7 +180,6 @@ const Post = ({ blog, profile, social, sanityKey }) => {
         />
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
-        <Script src="./assets//js//main.js"></Script>
       </Head>
 
       <div id="main" className="relative">

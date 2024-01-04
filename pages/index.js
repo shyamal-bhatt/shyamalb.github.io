@@ -49,6 +49,18 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
   return (
     <>
       <Script src="./assets//js/main.js"></Script>
+      <Script
+        defer
+        src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"
+      ></Script>
+
+      <Script
+        defer
+        src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+      ></Script>
+
+      <Script src="./assets//js//main.js"></Script>
+
       <Head>
         <meta charSet="utf-8" />
 
@@ -116,18 +128,6 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
           media="screen"
           rel="stylesheet"
         />
-
-        <Script
-          defer
-          src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"
-        ></Script>
-
-        <Script
-          defer
-          src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-        ></Script>
-
-        <Script src="./assets//js//main.js"></Script>
       </Head>
 
       {/* ==================================================== */}

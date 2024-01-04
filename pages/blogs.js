@@ -20,6 +20,7 @@ const Blogs = ({ blog, sanityKey }) => {
 
   return (
     <>
+      <Script src="./assets//js//main.js"></Script>
       <Head>
       <link
           href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
@@ -39,7 +40,6 @@ const Blogs = ({ blog, sanityKey }) => {
 
         <title>Blogs</title>
         <link rel="icon" type="image/png" href="./assets/img/SB.jfif" />
-        <Script src="./assets//js//main.js"></Script>
       </Head>
 
         <NavBar backgroundColor = "#070e18"/>
