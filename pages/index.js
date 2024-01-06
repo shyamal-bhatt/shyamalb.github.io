@@ -18,8 +18,8 @@ import imageUrlBuilder from "@sanity/image-url";
 export default function Home({ blog, profile, social, skills, project, emailKeys, sanityKey }) {
 
   const myConfiguredSanityClient = createClient({
-    projectId: sanityKey.sanity_project_id,
-    dataset: sanityKey.sanity_dataset,
+    projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
+    dataset: process.env.NEXT_PUBLIC_DATASET,
     useCdn: false,
   });
   const builder = imageUrlBuilder(myConfiguredSanityClient);
@@ -232,8 +232,8 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
                 <div className="pt-6 font-body leading-relaxed text-grey-20">
                   <PortableText
                     content={profile.desc}
-                    projectId= {sanityKey.sanity_project_id}
-                    dataset = {sanityKey.sanity_dataset}
+                    projectId= {process.env.NEXT_PUBLIC_PROJECT_ID}
+                    dataset = {process.env.NEXT_PUBLIC_DATASET}
                   />
                 </div>
                 <div className="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
@@ -314,8 +314,8 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
                       <div className="my-6 text-lg text-gray-700 leading-relaxed">
                         <PortableText
                           content={item.project_desc}
-                          projectId= {sanityKey.sanity_project_id}
-                          dataset = {sanityKey.sanity_dataset}
+                          projectId= {process.env.NEXT_PUBLIC_PROJECT_ID}
+                          dataset = {process.env.NEXT_PUBLIC_DATASET}
                         />
                       </div>
                       <Link href={item.project_link}>
@@ -518,8 +518,8 @@ export async function getStaticProps(context) {
   const sanity_dataset = process.env.NEXT_PUBLIC_DATASET
 
   const client = createClient({
-    projectId: sanity_project_id,
-    dataset: sanity_dataset,
+    projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
+    dataset: process.env.NEXT_PUBLIC_DATASET,
     useCdn: false,
   });
 
