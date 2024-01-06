@@ -510,9 +510,9 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
 
 export async function getStaticProps(context) {
   
-  const serviceId = process.env.EMAILJS_SERVICE_ID;
-  const templateId = process.env.EMAILJS_TEMPLATE_ID;
-  const userKey = process.env.EMAILJS_PUBLIC_USER_KEY;
+  const serviceId = process.env.NEXT_PUBLIC_SERVIC_ID;
+  const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+  const userKey = process.env.NEXT_PUBLIC_USER_KEY;
   
   const sanity_project_id = process.env.NEXT_PUBLIC_PROJECT_ID
   const sanity_dataset = process.env.NEXT_PUBLIC_DATASET
