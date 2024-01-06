@@ -514,8 +514,8 @@ export async function getStaticProps(context) {
   const templateId = process.env.EMAILJS_TEMPLATE_ID;
   const userKey = process.env.EMAILJS_PUBLIC_USER_KEY;
   
-  const sanity_project_id = process.env.PUBLIC_SANITY_PROJECT_ID
-  const sanity_dataset = process.env.PUBLIC_SANITY_DATASET
+  const sanity_project_id = process.env.NEXT_PUBLIC_PROJECT_ID
+  const sanity_dataset = process.env.NEXT_PUBLIC_DATASET
 
   const client = createClient({
     projectId: sanity_project_id,

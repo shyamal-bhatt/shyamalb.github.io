@@ -293,8 +293,8 @@ const Post = ({ blog, profile, social, sanityKey }) => {
 export default Post;
 
 export async function getServerSideProps(context) {
-  const sanity_project_id = process.env.PUBLIC_SANITY_PROJECT_ID
-  const sanity_dataset = process.env.PUBLIC_SANITY_DATASET
+  const sanity_project_id = process.env.NEXT_PUBLIC_PROJECT_ID
+  const sanity_dataset = process.env.NEXT_PUBLIC_DATASET
   const { slug } = context.query;
   const client = createClient({
     projectId: sanity_project_id,
