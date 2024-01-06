@@ -48,19 +48,7 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
   };
   return (
     <>
-      <Script src="./assets//js/main.js"></Script>
-      <Script
-        defer
-        src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"
-      ></Script>
-
-      <Script
-        defer
-        src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-      ></Script>
-
-      <Script src="./assets//js//main.js"></Script>
-
+      {/* <Script src="./assets//js/main.js"></Script> */}
       <Head>
         <meta charSet="utf-8" />
 
@@ -128,7 +116,19 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
           media="screen"
           rel="stylesheet"
         />
+
       </Head>
+        <Script
+          defer
+          src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"
+        ></Script>
+
+        <Script
+          defer
+          src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+        ></Script>
+
+        <Script src="./assets//js//main.js"></Script>
 
       {/* ==================================================== */}
       <div id="main" className="relative">
@@ -508,7 +508,7 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
 }
 
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   
   const serviceId = process.env.EMAILJS_SERVICE_ID;
   const templateId = process.env.EMAILJS_TEMPLATE_ID;

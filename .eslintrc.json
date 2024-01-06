@@ -3,6 +3,4 @@
   "rules": { "react/no-unescaped-entities": 0, 
               "react/jsx-key": [1, { "checkFragmentShorthand": true }]
             }
-  
-
 }
