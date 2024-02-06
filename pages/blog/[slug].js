@@ -74,7 +74,7 @@ const myPortableTextComponents = {
           height="315"
           src= {yturl}
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           style={{left: "0", top: "0", height: "100%", width: "100%", position: "absolute"}}
         ></iframe>

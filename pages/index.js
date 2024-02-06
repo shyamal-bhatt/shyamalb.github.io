@@ -48,7 +48,7 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
   };
   return (
     <>
-      {/* <Script src="./assets//js/main.js"></Script> */}
+      {/* <script src="./assets//js/main.js"></script> */}
       <Head>
         <meta charSet="utf-8" />
 
@@ -208,7 +208,7 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
                     className="buttons text-center  md:text-left"
                     style={{ paddingLeft: "4px" }}
                   >
-                    <Link href={profile.resume}>
+                    <Link legacyBehavior href={profile.resume}>
                       <button className="hover:underline decoration-yellow-500 font-body text-lg font-semibold uppercase text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">
                         My Resume
                       </button>
@@ -318,7 +318,7 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
                           dataset = {process.env.NEXT_PUBLIC_DATASET}
                         />
                       </div>
-                      <Link href={item.project_link}>
+                      <Link legacyBehavior href={item.project_link}>
                         <a
                           className="text-violet-500 font-bold hover:underline hover:text-red-400"
                           target="_blank"
@@ -349,7 +349,7 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
                 {blog.map((item) => {
                   // appends the slug to the url
                   return (
-                    <Link
+                    <Link legacyBehavior
                       key={item.slug.current}
                       href={"./blog/" + item.slug.current}
                       className="shadow"
@@ -508,7 +508,7 @@ export default function Home({ blog, profile, social, skills, project, emailKeys
 }
 
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   
   const serviceId = process.env.NEXT_PUBLIC_SERVIC_ID;
   const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;

@@ -29,7 +29,7 @@ const Footer = (socialLinks) => {
               <i className="bx bxl-linkedin text-2xl text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 hover:text-yellow"></i>
             </a>
 
-          <Link href={"mailto:"+socialLinks.gmail}>
+          <Link legacyBehavior href={"mailto:"+socialLinks.gmail}>
             <a
               className="cursor-pointer pl-4"
               rel="noopener noreferrer"

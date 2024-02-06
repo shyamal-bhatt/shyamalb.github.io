@@ -40,8 +40,8 @@ const Blogs = ({ blog, sanityKey }) => {
 
         <title>Blogs</title>
         <link rel="icon" type="image/png" href="./assets/img/SB.jfif" />
-      </Head>
         <Script src="./assets//js//main.js"></Script>
+      </Head>
 
         <NavBar backgroundColor = "#070e18"/>
         <div className="my-12" id="blog">
@@ -53,7 +53,7 @@ const Blogs = ({ blog, sanityKey }) => {
             <div className="mx-auto grid w-full grid-cols-1 gap-6 pt-12 sm:w-3/4 lg:w-full  lg:grid-cols-2 xl:gap-10">
               {blog.map((item) => {
                 return (
-                  <Link
+                  <Link legacyBehavior
                     key={item.slug.current}
                     href={"./blog/" + item.slug.current}
                     className="shadow"

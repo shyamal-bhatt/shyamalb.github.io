@@ -30,7 +30,7 @@ const NavBar = (col) => {
               </li>
 
               <li className="group pl-6 animate-beat">
-                <Link href={"./projects"}>
+                <Link legacyBehavior href={"./projects"}>
                   <a>
                     <span className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">
                       Projects
@@ -41,7 +41,7 @@ const NavBar = (col) => {
               </li>
 
               <li className="group pl-6 animate-wiggle">
-                <Link href={"./blogs"}>
+                <Link legacyBehavior href={"./blogs"}>
                   <a target={"_blank"}>
                     <span className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white ">
                       Blog
@@ -92,7 +92,7 @@ const NavBar = (col) => {
             </li>
 
             <li className="py-2">
-            <Link href={"./projects"}>
+            <Link legacyBehavior href={"./projects"}>
               <span className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">
                 Projects
               </span>
@@ -100,7 +100,7 @@ const NavBar = (col) => {
             </li>
 
             <li className="py-2">
-              <Link href={"./blogs"}>
+              <Link legacyBehavior href={"./blogs"}>
                 <a target={"_blank"}>
                   <span className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">
                     Blog

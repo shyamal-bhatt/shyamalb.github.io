@@ -66,7 +66,7 @@ const Projects = ({ project, sanityKey }) => {
                           dataset = {sanityKey.sanity_dataset}
                         />
                       </div>
-                      <Link href={item.project_link}>
+                      <Link legacyBehavior href={item.project_link}>
                         <a
                           className="text-red-500 font-bold hover:underline hover:text-red-400"
                           target="_blank"
